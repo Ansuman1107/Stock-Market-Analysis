@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Stock Tracker</h1>
+      </header>
+      <main>
+        <section id="chart-section">
+          <div id="chart-header">
+            <h2>Stock Chart</h2>
+            <div id="chart-controls">
+              <!-- <button data-range="1mo">1 Month</button>
+              <button data-range="3mo">3 Months</button>
+              <button data-range="1y">1 Year</button>
+              <button data-range="5y">5 Years</button> -->
+            </div>
+          </div>
+          <!-- <div id="chart-container"></div> -->
+          <div class="lhs">
+            <div id="chartElement">
+              <canvas id="chart" class="chart-section"> </canvas>
+              <div id="buttonSection-chart"></div>
+            </div>
+          </div>
+        </section>
+        <aside id="list-section">
+          <h2>Stock List</h2>
+          <ul id="stock-list"></ul>
+        </aside>
+      </main>
+      <footer>
+        <section id="details-section">
+          <div id="stock-heading">
+            <h2 id="stock-name"></h2>
+            <p id="stock-bookValue"></p>
+            <p id="stock-profit"></p>
+          </div>
+
+          <p id="stock-summary">Summary:</p>
+        </section>
+      </footer>
+    </div>
+    <script src="scripts/app.js" type="module"></script>
+  </body>
+</html>

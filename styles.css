@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: #333;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Chart Section */
+#chart-section {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#chart-controls {
+  margin-top: 10px;
+}
+
+#chart-controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+#chart-controls button:hover {
+  background: #45a049;
+}
+
+#chart-container {
+  margin-top: 20px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  border: 1px dashed #ccc;
+}
+
+/* List Section */
+#list-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100%;
+}
+
+#stock-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#stock-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#stock-list li:hover {
+  background: #e7f4e4;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+/* Details Section */
+footer {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#stock-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align vertically */
+  gap: 20px; /* Space between items */
+}
+#stock-heading h2,
+#stock-heading p {
+  margin: 0; /* Remove default margin */
+}
+
+#stock-name,
+#stock-bookValue,
+#stock-profit,
+#stock-summary {
+  margin: 0;
+}
+
+/* .lhs {
+  margin-top: 5%; */
+/* margin-left: 3%; */
+/* width: 90vw;
+} */
+
+#chartElement {
+  height: 100%;
+  width: 52vw;
+  border-radius: 3%;
+  margin-left: 2%;
+  /* background-color: rgb(31, 10, 70); */
+  background-color: rgba(39, 16, 83, 0.884);
+}
+
+#chart {
+  background-color: rgba(39, 16, 83, 0.884);
+  height: 75% !important;
+  width: 100%;
+  border-radius: 3%;
+  padding: 5%;
+}
+
+#buttonSection-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(39, 16, 83, 0.884);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #chart-section,
+  #list-section {
+    width: 100%;
+  }
+}
